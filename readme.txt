@@ -1,1 +1,3 @@
-This is a test!
+redis的双主设计
+通过外部superclient进程转发redis接收到的指令，令两个redis中的数据保持一致性
+再部署一个备用superclient以保证两个redis中的数据高度一致性
